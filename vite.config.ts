@@ -11,7 +11,7 @@ export default defineConfig({
     legacy()
   ],
   build: {
-    outDir: 'dist', // Specify your desired output directory here
+    outDir: 'build', // Specify your desired output directory here
   },
   test: {
     globals: true,

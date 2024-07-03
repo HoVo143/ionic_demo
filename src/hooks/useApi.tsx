@@ -37,9 +37,7 @@ export const useApi = () =>{
   let apiKey = '7fddd07f'
 
   const searchData = async (title:string, type: SearchType) : Promise<SearchResult[] | SearchError > => {
-    const result = await fetch(
-      `${url}?s=${encodeURI(title)}&type=${type}&apiKey=${apiKey}`
-    )
+    const result = await fetch(`${url}?s=${encodeURI(title)}&type=${type}&apiKey=${apiKey}`)
     return result.json()
   }
 
